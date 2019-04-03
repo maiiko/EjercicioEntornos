@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="edes/" kind="src" path="edes/src"/>
+	<classpathentry kind="src" path="edes/src/edes"/>
+	<classpathentry kind="output" path="edes/bin"/>
+</classpath>
