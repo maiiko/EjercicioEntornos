@@ -5,7 +5,7 @@ public class Serie {
 	private boolean entregado;
 	private String genero;
 	private String creador;
-	
+	 
 	public Serie() {
 		titulo = "";
 		numTemporadas = 3;
