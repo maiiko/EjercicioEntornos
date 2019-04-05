@@ -1,9 +1,6 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 
-public class Videojuego {
+public class Videojuego implements Entregable {
 // patata
-	BufferedReader leer=new BufferedReader(new InputStreamReader(System.in));
 	
 	String titulo, genero, compañia;
 	int horasEstimadas;
@@ -61,6 +58,18 @@ public class Videojuego {
 
 	public void setHorasEstimadas(int horasEstimadas) {
 		this.horasEstimadas = horasEstimadas;
+	}
+	@Override
+	public void entregar() {
+		entregado = true;		
+	}
+	@Override
+	public void devolver() {
+		entregado = false;
+	}
+	@Override
+	public boolean isEntregado() {
+		return entregado;
 	}
 	
 	

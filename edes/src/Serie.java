@@ -1,5 +1,5 @@
 
-public class Serie {
+public class Serie implements Entregable {
 	private String titulo;
 	private int numTemporadas;
 	private boolean entregado;
@@ -59,6 +59,21 @@ public class Serie {
 
 	public void setCreador(String creador) {
 		this.creador = creador;
+	}
+
+	@Override
+	public void entregar() {
+		entregado = true;
+	}
+
+	@Override
+	public void devolver() {
+		entregado = false;
+	}
+
+	@Override
+	public boolean isEntregado() {
+		return entregado; 
 	}
 	
 }
