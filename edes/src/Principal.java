@@ -1,8 +1,31 @@
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Principal {
-	public static int pedirnum(String l, int min, int max) {
+	public static String pedirtexto(String l) throws IOException {
+		System.out.println(l);
+		
+		return leer.readLine();
+	}
+	
+	public static boolean pedirboo(String l,char f, char t) throws IOException {
+		boolean fa; // d-devuelto-false s- sacado-true
+		char a;
+		
+		do {
+		a=pedirtexto(l).toUpperCase().charAt(0);
+		}while(a!= f || a!= t);
+		if(a==f) {
+			fa=false;
+		}else {
+			fa=true;
+		}
+		
+		return fa;
+	}
+	
+	public static int pedirnum(String l, int min, int max) throws NumberFormatException, IOException {
 		int j;
 		do {
 			System.out.println(l);
@@ -19,14 +42,14 @@ public class Principal {
 		
 		Serie[] s=new Serie[5];
 		Videojuego[] v=new Videojuego[5];
-		
-		for (int i = 0; i < s.length; i++) {
-			s[i]=new Serie();	
-		}
-		
-		for (int i = 0; i < v.length; i++) {
-			v[i]=new Videojuego();
-		}
+		//TODO: clase creadora única
+//		for (int i = 0; i < s.length; i++) {
+//			s[i]=new Serie();	
+//		}
+//		
+//		for (int i = 0; i < v.length; i++) {
+//			v[i]=new Videojuego();
+//		}
 		
 		
 	}

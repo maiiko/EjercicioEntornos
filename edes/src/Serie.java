@@ -22,7 +22,7 @@ public class Serie implements Entregable {
 		genero = "";
 	}
 	
-	public Serie(String titulo, int numTemporadas, String genero, String creador) {
+	public Serie(String titulo,String creador, String genero,int numTemporadas) {
 		this.titulo = titulo;
 		this.numTemporadas = numTemporadas;
 		this.genero = genero;
